@@ -1,0 +1,108 @@
+body{
+    display: grid;
+    max-width: auto;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-style: arial;
+    color: beige;
+    
+    
+}
+
+.container {
+    background-size: contain;  
+   
+    padding: 2px;
+    display: grid;
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 2px;
+    grid-template-columns: 250px auto ;
+    grid-auto-rows: 100px auto auto 600px;
+    grid-template-areas: 
+        "h h h h"
+        "s c c c"
+        "s c c c"
+        "s c c c"
+       
+     ;
+
+}
+
+.container div {
+    padding: 0.5px;
+    
+    
+}
+
+.header {
+  
+    grid-area: h;
+     
+} 
+#logo{
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 90px;
+    height: 90px;
+}
+.nav-bar {
+    background-color: #ccc;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-bar a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-bar .search-bar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-bar .search-bar input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .nav-bar .search-bar button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.sidebar {
+    background-image: url(chat.png);
+    grid-area: s;
+    height: 400px;
+}
+
+.contest {
+    grid-area: c;
+}
+h1{
+    text-align: center;
+    color: rgb(228, 7, 7);
+    font-size: 60px;
+    text-shadow: 3px 2px 40px #f3ecec;
+    text-shadow: rgb(245, 235, 235) 0.1em 0.1em 0.2em;
+        
+   }
+.pala{
+    
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin: -25px 0 0 -25px; /* aplique margens superior e esquerda negativas para centralizar de verdade o elemento */
+}
